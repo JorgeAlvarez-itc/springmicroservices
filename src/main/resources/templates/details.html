@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="https://www.tymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Curso Microservicios!</title>
+    <title th:text="${title}">Curso Microservicios!</title>
 </head>
 <body>
-    <h1>Hola mundo! este es el curso de microservicios. 1.1.1.1.11.</h1>
-
+    <h1 th:text="${title}">Hola mundo! este es el curso de microservicios. 1.1.1.1.11.</h1>
+    <ul>
+        <li th:text="${name}"></li>
+        <li th:text="${lastName}"></li>
+    </ul>
 </body>
 </html>
